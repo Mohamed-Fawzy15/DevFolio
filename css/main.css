@@ -1,0 +1,313 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  font-weight: 600;
+  background-color: #f5f5f5;
+}
+
+/* start of navbar */
+
+.nav {
+  --bs-tertiary-bg-rgb: 0, 0, 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
+
+.nav a {
+  --bs-navbar-brand-color: white;
+  --bs-navbar-brand-hover-color: white;
+  --bs-navbar-brand-font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 34px;
+  --bs-nav-link-padding-y: 0rem;
+}
+
+.navbar-content {
+  --bs-nav-link-color: white;
+  --bs-nav-link-color: white;
+  --bs-nav-link-hover-color: white;
+  --bs-nav-link-disabled-color: white;
+  --bs-navbar-active-color: white;
+}
+
+.nav button i {
+  color: white;
+}
+
+.navbar-content li:hover:after {
+  content: "";
+  border-bottom: 1px solid white;
+  width: 80%;
+  display: block;
+  transition: 1s ease-out;
+  animation-name: navbar-line;
+  animation-iteration-count: 1;
+  animation-duration: 0.5s;
+  padding-left: 8px;
+
+  animation-direction: alternate;
+}
+@keyframes navbar-line {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+/* end of navbar */
+
+/* start hero section */
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../imgs/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+}
+
+.hero h1 {
+  font-size: calc(3rem + 1.5vw);
+  font-weight: 600;
+  line-height: 58px;
+}
+
+.hero p {
+  border-right: 1px solid white;
+  padding-right: 5px;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-name: typing;
+  animation-delay: 1s;
+  animation-direction: alternate;
+  display: block;
+  overflow: hidden;
+  max-width: 105px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 36px;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+/* end hero section */
+
+/* start about section */
+
+.about-content {
+  background-color: white;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  width: 95%;
+}
+
+.about-data p {
+  color: rgb(78, 78, 78);
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.about-data span,
+.about-skills span {
+  font-weight: 600;
+  color: rgb(30, 30, 30);
+  line-height: 26px;
+  font-size: 1.125rem;
+}
+
+.about-skills p {
+  font-weight: 400;
+  color: rgb(78, 78, 78);
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+
+.about-right h2::after {
+  content: "";
+  border-bottom: 3px solid #0278ff;
+  border-radius: 5px;
+  width: 25%;
+  display: block;
+}
+/* end about section */
+
+/* start services section */
+
+.services-header {
+  position: relative;
+}
+.services-header h2,
+.protfolio-header h2 {
+  color: rgb(30, 30, 30);
+  font-weight: 700;
+  line-height: 58px;
+  font-size: 3rem;
+}
+
+.services-header p,
+.protfolio-header p {
+  font-weight: 400;
+  color: rgb(78, 78, 78);
+  line-height: 24px;
+  font-size: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.services-header p::after,
+.protfolio-header p::after {
+  content: "";
+  border-bottom: 5px solid #0278ff;
+  width: 40px;
+  display: block;
+  padding: 10px 0px;
+}
+.services-card {
+  padding: 20px;
+}
+
+.inner {
+  background-color: white;
+  padding: 40px 20px;
+  border-radius: 12px;
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+/* .inner::before {
+  content: "\f1cc";
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+} */
+
+.card-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 7.5px solid #0278ff;
+  margin: auto;
+  transition: 0.5s background-color ease-out, 1s border ease-out;
+}
+
+.card-icon i {
+  font-size: 2.5rem;
+  transition: 0.5s color ease-out;
+}
+
+.services-card:hover .card-icon {
+  background-color: #0278ff;
+  border: 7.5px solid #cde0f8;
+}
+
+.services-card:hover i {
+  color: white;
+}
+
+.card-content h2 {
+  color: rgb(30, 30, 30);
+  font-weight: 500;
+  font-size: 1.375rem;
+  line-height: 27px;
+}
+
+.card-content p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 24px;
+  color: rgb(78, 78, 78);
+}
+
+/* end services section */
+
+/* start of counter section */
+
+.counter {
+  background-image: linear-gradient(#0077ff8f, #0077ffa2),
+    url(../imgs/counter.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 8rem 0px;
+}
+
+.counter-icon {
+  width: 75px;
+  height: 75px;
+  border: 10px solid #cde0f8;
+  border-radius: 50%;
+}
+.counter-icon i {
+  font-size: 2rem;
+  line-height: 48px;
+}
+
+.counter-num {
+  font-size: 2rem;
+  line-height: 48px;
+  font-weight: 400;
+}
+
+.counter-text {
+  font-size: 1rem;
+  line-height: 24px;
+  font-weight: 400;
+}
+/* end of counter section */
+
+/* start of protofolio section */
+
+.protfolio-card {
+  padding: 12px;
+}
+
+.protfolio-card img {
+  transition: 0.5s transform ease-in-out;
+  cursor: pointer;
+}
+
+.protfolio-card img:hover {
+  transform: scale(1.3);
+}
+
+.portfolio-inner {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+
+.protfolio-card-content h5 {
+  color: rgb(30, 30, 30);
+  font-weight: 500;
+  font-size: 1.1875rem;
+  line-height: 23px;
+}
+
+.protfolio-card-content p,
+.protfolio-card-content span {
+  font-size: 0.8125rem;
+  line-height: 19px;
+  font-weight: 400;
+}
+
+.protfolio-card-content i {
+  font-size: 2.5rem;
+}
+
+/* end of protofolio section */
