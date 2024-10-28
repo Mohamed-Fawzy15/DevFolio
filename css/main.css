@@ -355,11 +355,5 @@ body {
   font-weight: 600;
   line-height: 2.125rem;
 }
-/* for the second photo on mobile because it is too big and it like 1.5  */
-@media screen and (min-width: 768px) {
-  .col-1-5 {
-    width: 13%;
-  }
-}
 
 /* end of carsoul section */
