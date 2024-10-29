@@ -64,22 +64,16 @@ body {
   --bs-nav-link-padding-y: 0rem;
 }
 
-.navbar-content {
-  --bs-nav-link-color: white;
-  --bs-nav-link-color: white;
-  --bs-nav-link-hover-color: white;
-  --bs-nav-link-disabled-color: white;
-  --bs-navbar-active-color: white;
-}
-
-.nav button i {
-  color: white;
+.nav a[herf="#about"]:target {
+  border-bottom: 1px solid white;
+  width: 80%;
+  display: block;
 }
 
 .navbar-content li:hover:after {
   content: "";
-  border-bottom: 1px solid white;
-  width: 80%;
+  border-bottom: 3px solid white;
+  width: 60%;
   display: block;
   transition: 1s ease-out;
   animation-name: navbar-line;
@@ -94,9 +88,10 @@ body {
     width: 0;
   }
   100% {
-    width: 80%;
+    width: 60%;
   }
 }
+
 /* end of navbar */
 
 /* start hero section */
@@ -106,6 +101,7 @@ body {
     url(../imgs/hero.jpg);
   background-position: center;
   background-size: cover;
+  background-attachment: scroll;
   min-height: 100vh;
   color: white;
 }
@@ -380,6 +376,7 @@ body {
   background-size: cover;
   color: white;
   padding: 8rem 0px;
+  background-attachment: scroll;
 }
 
 .carousel-points {
@@ -458,6 +455,8 @@ body {
   background-position: center;
   background-size: cover;
   padding: 7rem 0 3rem 0;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  background-attachment: scroll;
 }
 
 .contact-content {
@@ -478,16 +477,25 @@ body {
   font-size: 0.875rem;
 }
 
+.message input {
+  padding: 10px 15px;
+}
+
 .message input:focus,
 .message textarea:focus {
-  /* --bs-border-color: #0078ff; */
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-  /* outline: -webkit-focus-ring-color auto 1px; */
   outline-color: #0078ff;
 }
 
 .contact-btn {
   font-size: 1.1875rem;
+  transition: 0.4s;
+}
+
+.contact-btn:hover {
+  --bs-btn-hover-bg: #3393ff;
+  box-shadow: 0 0 0 4px #cde1f8;
+  border: none;
 }
 
 .getInTouch-text {
@@ -517,8 +525,15 @@ body {
   transition: 0.5s ease-in-out color;
 }
 
-.social-links-icon:hover {
+.link:hover .social-links-icon {
   color: white;
 }
 
 /* end of contact section */
+
+/* start of footer section */
+
+.footer {
+  background-color: #0062d3;
+}
+/* end of footer section */

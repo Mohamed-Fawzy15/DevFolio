@@ -29,35 +29,50 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <i class="bi bi-list"></i>
+            <i class="bi bi-list text-white"></i>
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-content">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <li class="nav-item text-white">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#home"
+                  style="color: white"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link text-white" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#services"
                   >Services</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#portfolio"
                   >Work
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#blog"
                   >Blog
                 </a>
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle text-white"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -66,16 +81,17 @@
                   Dropdown
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
+                  <li><a class="dropdown-item" href="#">Drop down 1</a></li>
+                  <li><a class="dropdown-item" href="#">Drop down 2</a></li>
+                  <li><a class="dropdown-item" href="#">Drop down 3</a></li>
+                  <li><a class="dropdown-item" href="#">Drop down 4</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#contact"
                   >Contact</a
                 >
               </li>
@@ -89,9 +105,10 @@
     <!-- start of hero  -->
     <header
       class="hero d-flex justify-content-center align-items-center flex-column text-center"
+      id="home"
     >
       <h1 class="mb-4">I am Morgan Freeman</h1>
-      <p></p>
+      <!-- <p></p> -->
 
       <!-- the animation using js insted of css -->
       <div class="d-flex align-items-center">
@@ -103,7 +120,7 @@
     <!-- end of hero  -->
 
     <!-- start of about  -->
-    <section class="about py-5">
+    <section class="about py-5" id="about">
       <div class="container py-5 about-content bg-white shadow px-5">
         <div class="row pb-5">
           <div class="about-left col-12 col-md-4 col-md-6">
@@ -217,7 +234,7 @@
     <!-- end of about  -->
 
     <!-- start of services  -->
-    <section class="services text-center py-5">
+    <section class="services text-center py-5" id="services">
       <div class="container">
         <div class="row justify-content-center align-items-center">
           <div class="heading col-12">
@@ -337,7 +354,7 @@
     <!-- end of services  -->
 
     <!-- start of counter  -->
-    <section class="counter text-center">
+    <section class="counter text-center" id="counter">
       <div class="container">
         <div class="row justify-content-center align-items-center py-5">
           <div
@@ -390,7 +407,7 @@
     <!-- end of counter  -->
 
     <!-- start of portfolio  -->
-    <section class="portfolio py-5">
+    <section class="portfolio py-5" id="portfolio">
       <div class="container">
         <div class="row justify-content-center align-items-center">
           <div class="heading col-12 text-center">
@@ -570,7 +587,7 @@
     <!-- end of portfolio  -->
 
     <!-- start of carsoul -->
-    <section class="carsoul text-center">
+    <section class="carsoul text-center" id="carsoul">
       <div class="container">
         <div
           id="carouselExampleCaptions"
@@ -641,7 +658,7 @@
     <!-- end of carsoul -->
 
     <!-- start of blog -->
-    <section class="blog py-5">
+    <section class="blog py-5" id="blog">
       <div class="container">
         <header class="heading text-center">
           <h2 class="text-uppercase display-5 fw-bold">blog</h2>
@@ -803,40 +820,40 @@
     <!-- end of blog -->
 
     <!-- start of contact -->
-    <section class="contact shadow">
+    <section class="contact" id="contact">
       <div class="container bg-white contact-content">
         <div class="row g-5">
-          <div class="message col-12 col-md-6">
-            <h2 class="header-line pb-5">Send Message Us</h2>
+          <div class="message col-12 col-md-6 px-md-5">
+            <h2 class="header-line pb-4">Send Message Us</h2>
             <form class="gy-2">
               <div class="row gy-2 justify-content-center align-items-center">
                 <input
                   type="text"
                   name="name"
                   placeholder="Your Name"
-                  class="w-100 border border-opacity-10 p-2 fw-normal"
+                  class="w-100 border border-opacity-10 mb-3 fw-normal"
                 />
                 <input
                   type="email"
                   name="email"
                   placeholder="Your Email"
-                  class="w-100 border border-opacity-10 p-2 fw-normal"
+                  class="w-100 border border-opacity-10 mb-3 fw-normal"
                 />
                 <input
                   type="text"
                   name="subject"
                   placeholder="Your subject"
-                  class="w-100 border border-opacity-10 p-2 fw-normal"
+                  class="w-100 border border-opacity-10 mb-3 fw-normal"
                 />
                 <textarea
                   name="message"
                   rows="5"
                   placeholder="Message"
-                  class="w-100 border border-opacity-10 p-2 fw-normal"
+                  class="w-100 border border-opacity-10mb-3 fw-normal"
                 ></textarea>
                 <button
                   type="submit"
-                  class="col-5 fs-5 btn btn-primary rounded-5 contact-btn"
+                  class="col-6 col-sm-8 col-lg-5 fs-5 btn btn-primary rounded-5 contact-btn"
                 >
                   Send Message
                 </button>
@@ -893,6 +910,18 @@
       </div>
     </section>
     <!-- end of contact -->
+
+    <!-- start of footer -->
+    <footer class="footer text-center py-4">
+      <div class="container text-white fw-normal">
+        <p>
+          &copy; Copyright <span class="fw-bold">DevFolio</span>. All Rights
+          Reserved
+        </p>
+        <p class="m-0">Designed by Mohamed Fawzy</p>
+      </div>
+    </footer>
+    <!-- end of footer -->
 
     <!-- start of animation in the hero section using typed.js libarary -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
